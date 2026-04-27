@@ -1,0 +1,28 @@
+DROP YOUR PHOTOS HERE
+=====================
+
+Replace each file below with your own photo (same filename, JPEG or JPG).
+Portrait orientation works best for milestone photos.
+Landscape works for hero shots.
+
+  hero.jpg        — Main full-screen photo (used on opening and closing)
+  before-1.jpg    — "Before We Said I Do" / how you met
+  wedding-1.jpg   — Wedding day primary photo
+  wedding-2.jpg   — Wedding day secondary (shown as inset, optional)
+  child-1.jpg     — First child
+  child-2.jpg     — Second child
+  parce-1.jpg     — Parce (your dog)
+  travel-1.jpg    — Travel & Adventures primary
+  travel-2.jpg    — Travel secondary (shown as inset, optional)
+
+TIPS
+----
+- Aim for at least 1200px on the long edge for crisp display.
+- Dark, moody shots with natural light look best with the cinematic filter.
+- If a photo is missing, the browser will just show a broken image icon
+  in that spot — no errors on the rest of the page.
+
+AFTER ADDING PHOTOS
+-------------------
+Open index.html in any browser — no server needed.
+Then edit the placeholder text in index.html (search for "[" to find all spots).

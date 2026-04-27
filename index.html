@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ten Years &mdash; A Love Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Film grain SVG filter -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute">
+    <filter id="grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise" />
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise" />
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blended" />
+      <feComposite in="blended" in2="SourceGraphic" operator="in" />
+    </filter>
+  </svg>
+</head>
+<body>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero">
+    <div class="hero-photo">
+      <img src="photos/hero.jpg" alt="Our story" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-label">A Decade of Love</span>
+      <h1 class="hero-title">Ten Years</h1>
+      <hr class="hero-rule" />
+      <!-- EDIT: replace with your actual wedding date and today's date -->
+      <p class="hero-dates">April 27, 2016 &mdash; April 27, 2026</p>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span class="chevron"></span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       OPENING QUOTE
+  ============================================================ -->
+  <section id="quote">
+    <div class="quote-inner reveal">
+      <!-- EDIT: replace with your own words or keep this one -->
+      <blockquote>
+        If I could go back to that first moment&mdash;<br />
+        knowing everything we would go through&hellip;<br /><br />
+        I would still choose you.<br />
+        Every time. In every version of this life.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER I — BEFORE WE SAID "I DO"
+  ============================================================ -->
+  <section id="before" class="milestone">
+    <div class="milestone-photo reveal">
+      <img src="photos/before-1.jpeg" alt="Before we said I do" />
+    </div>
+    <div class="milestone-text reveal">
+      <span class="chapter-label">Chapter I</span>
+      <h2 class="chapter-heading">Before We Said &ldquo;I Do&rdquo;</h2>
+      <hr class="divider" />
+      <!-- EDIT: add the year you met -->
+      <span class="year-badge">2010</span>
+      <p class="caption">
+        It didn&rsquo;t feel like a life-changing moment at the time.
+        Just two people crossing paths&mdash;a conversation, a laugh, something easy.
+        But looking back now, that was it. That was the moment everything began.
+        We didn&rsquo;t rush it. We just kept showing up&mdash;for conversations, for laughs, for each other.
+        Somewhere along the way, without a big announcement or a defining moment,
+        you became my person. And what we had started to feel like home.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PARCE
+  ============================================================ -->
+  <section id="parce" class="milestone reverse">
+    <div class="milestone-text reveal">
+      <span class="year-badge">2015</span>
+      <h2 class="chapter-heading">&amp; Then There Was Parce</h2>
+      <hr class="divider" />
+      <p class="caption">
+        We thought we were rescuing Parce. Turns out, Parce rescued us right back.
+        The best kind of love is the kind that shows up with four paws and no agenda.
+      </p>
+    </div>
+    <div class="milestone-photo reveal">
+      <img src="photos/parce.jpeg" alt="Parce" />
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER II — THE WEDDING DAY
+  ============================================================ -->
+  <section id="wedding" class="milestone reverse">
+    <div class="milestone-text reveal">
+      <span class="chapter-label">Chapter II</span>
+      <h2 class="chapter-heading">The Wedding Day</h2>
+      <hr class="divider" />
+      <!-- EDIT: your wedding year -->
+      <span class="year-badge">2016</span>
+      <p class="caption">
+        That day wasn&rsquo;t just about a dress, a suit, or a celebration.
+        It was a quiet, powerful decision: to choose each other&mdash;not just in that moment,
+        but in all the moments to come.
+        The easy ones. And the hard ones too.
+      </p>
+    </div>
+    <div class="milestone-photo gallery reveal">
+      <img src="photos/wedding-1.jpg" alt="Our wedding day" />
+      <img src="photos/wedding-2.jpg" alt="Our wedding day" />
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER III — HOME & FAMILY
+  ============================================================ -->
+  <section id="family">
+    <div class="chapter-intro reveal">
+      <span class="chapter-label">Chapter III</span>
+      <h2 class="chapter-heading centered">Home &amp; Family</h2>
+      <hr class="divider centered" />
+      <p class="chapter-intro-text">
+        Life didn&rsquo;t suddenly become perfect. There were long days, routines, responsibilities&mdash;
+        and figuring things out as we went. But this is where we became a team.
+        Where love stopped being just a feeling&mdash;and became something we built, every day.
+      </p>
+    </div>
+
+    <!-- Sub-section: First Child -->
+    <div class="sub-milestone reveal">
+      <div class="sub-photo">
+        <img src="photos/child-1.jpeg" alt="First child" />
+      </div>
+      <div class="sub-text">
+        <!-- EDIT: first child's name and birth year -->
+        <span class="year-badge">2020</span>
+        <h3 class="sub-heading">Alexandra</h3>
+        <hr class="divider" />
+        <p class="caption">
+          And then&hellip; everything shifted. Life got louder. Messier. Busier.
+          And somehow, more beautiful than we ever imagined.
+          We held someone new and understood, all at once, what love truly means.
+        </p>
+      </div>
+    </div>
+
+    <!-- Sub-section: Second Child -->
+    <div class="sub-milestone reverse reveal">
+      <div class="sub-text">
+        <!-- EDIT: second child's name and birth year -->
+        <span class="year-badge">2022</span>
+        <h3 class="sub-heading">Adrian</h3>
+        <hr class="divider" />
+        <p class="caption">
+          We didn&rsquo;t just grow together anymore&mdash;we built something bigger than us.
+          Our greatest adventure wasn&rsquo;t a place. It was this.
+        </p>
+      </div>
+      <div class="sub-photo">
+        <img src="photos/child-2.jpeg" alt="Second child" />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       CHAPTER IV — TRAVEL & ADVENTURES
+  ============================================================ -->
+  <section id="travel" class="milestone">
+    <div class="milestone-photo gallery reveal">
+      <img src="photos/travel-1.jpeg" alt="Our travels" />
+      <img src="photos/travel-2.jpeg" alt="Our travels" />
+    </div>
+    <div class="milestone-text reveal">
+      <span class="chapter-label">Chapter IV</span>
+      <h2 class="chapter-heading">Travel &amp; Adventures</h2>
+      <hr class="divider" />
+      <!-- EDIT: notable places or years of travel -->
+      <span class="year-badge">Always</span>
+      <p class="caption">
+        We went places. Saw things. Tried new food. Got lost a few times.
+        But the truth is&mdash;it was never really about where we were.
+        It was about being there together.
+        Every trip became a story. Every moment, another piece of us.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHERE WE ARE NOW
+       PHOTO: add photos/family-now.jpg — your best current family photo
+  ============================================================ -->
+  <section id="now">
+    
+    <div class="now-text reveal">
+      <span class="chapter-label">Chapter V</span>
+      <h2 class="chapter-heading">Where We Are Now</h2>
+      <hr class="divider centered" />
+      <div class="now-photo reveal">
+        <img src="photos/family-now.jpeg" alt="Our family today" />
+      </div>
+      <p class="now-caption">
+        Together, we created the most beautiful thing we&rsquo;ve ever known&mdash;
+        a family. Through every season, every challenge, every ordinary Monday,
+        we chose each other and built something extraordinary.
+        We couldn&rsquo;t be prouder of everything we&rsquo;ve become,
+        and everything still ahead of us.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CLOSING
+  ============================================================ -->
+  <section id="closing">
+    <div class="closing-photo">
+      <img src="photos/hero_3.jpeg" alt="Us" />
+    </div>
+    <div class="closing-overlay"></div>
+    <div class="closing-content reveal">
+      <p class="closing-line">Here we are.</p>
+      <p class="closing-subline">
+        Not the same people we were when we started&mdash;<br />
+        but stronger because of it.<br />
+        This isn&rsquo;t luck.<br />
+        This is us choosing each other, again and again.<br /><br />
+        <em>Together.</em>
+      </p>
+      <hr class="hero-rule" />
+      <!-- EDIT: your names -->
+      <p class="closing-names">Ericka &amp; Alejandro</p>
+      <p class="closing-heart">&#9825;</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SPOTIFY PLAYER — fixed bottom bar
+       HOW TO SET YOUR SONG:
+         1. Open Spotify, find your song
+         2. Right-click the song → Share → Copy Song Link
+            e.g. https://open.spotify.com/track/3n3Ppam7vgaVa1iaRUIOKE
+         3. Copy only the Track ID (the part after /track/)
+         4. Replace REPLACE_WITH_TRACK_ID below with that ID
+         https://open.spotify.com/track/6E6a2T1KtGMYShq0rjK7A0?si=772a1b0e90434b0a
+  ============================================================ -->
+  <div id="spotify-bar">
+    <iframe
+      id="spotify-player"
+      src="https://open.spotify.com/embed/track/6E6a2T1KtGMYShq0rjK7A0?utm_source=generator&theme=0"
+      width="100%"
+      height="80"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
+    <button id="spotify-close" aria-label="Close player">&#x2715;</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
